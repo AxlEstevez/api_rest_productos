@@ -26,3 +26,5 @@ es necesario tener python como variable de entorno en el PATH de windows.
 
 **Si solo se tiene una versión de python instalada no es necesario**
 **usar python3 para poder ejecutar el archivo app.py**
+
+Por ultimo, se utiliza [xmlMod](https://github.com/AxlEstevez/xmlMod) en algunos modulos.
