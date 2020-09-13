@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><anaquel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="productos.xsd">	
+	
+	
+	
+	
+	
+	
+		<producto>		
+		
+		
+		
+		
+		
+		
+				<nombre>Agua</nombre>		
+		
+		
+		
+		
+		
+		
+				<precio>7.00</precio>		
+		
+		
+		
+		
+		
+		
+				<descripcion>Agua natural de 600 ml</descripcion>		
+		
+		
+		
+		
+		
+		
+				<marca>Bonafont</marca>		
+		
+		
+		
+		
+		
+		
+				<imagen url="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/gr/images/product-images/img_large/00075810400171L.jpg"/>		
+		
+		
+		
+		
+		
+		
+				<codigoBarras>234566</codigoBarras>		
+		
+		
+		
+	
+	
+	
+		</producto>	
+	
+	
+	
+	
+	
+	
+	
+		<producto>		
+		
+		
+		
+		
+		
+		
+				<nombre>Mantequilla</nombre>		
+		
+		
+		
+		
+		
+		
+				<precio>12.00</precio>		
+		
+		
+		
+		
+		
+		
+				<descripcion>Mantequilla vegetal de 1kg</descripcion>		
+		
+		
+		
+		
+		
+		
+				<marca>Iberia</marca>		
+		
+		
+		
+		
+		
+		
+				<imagen url="https://cdn.shopify.com/s/files/1/0080/1076/0255/products/MARG-IBERIA-1-KG.jpg?v=1557783774"/>		
+		
+		
+		
+		
+		
+		
+				<codigoBarras>25888</codigoBarras>		
+		
+		
+		
+	
+	
+	
+		</producto>	
+	
+	
+	
+
+
+	
+	<producto>		<nombre>Leche</nombre>		
+			<precio>20.00</precio>		
+			<descripcion>Leche entera de vaca de 1ltro.</descripcion>		
+			<marca>Alpura</marca>		
+			<imagen url="https://www.superama.com.mx/Content/images/products/img_large/0750105590003L.jpg"/>		
+			<codigoBarras>222225</codigoBarras>		
+	</producto></anaquel>

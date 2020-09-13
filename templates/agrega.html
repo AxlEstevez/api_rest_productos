@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/fontello.css">
+    <title>Agrega producto</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="/">inicio</a>
+                <a href="/add">Agregar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="formulario">
+            <form action="/add" method="POST">
+                <h1>Producto nuevo</h1>
+                <input type="text" name="nombre" placeholder="Nombre del producto"><br>
+                <input type="text" name="precio" placeholder="Precio del producto"><br>
+                <input type="text" name="descripcion" placeholder="Breve descripción del producto"><br>
+                <input type="text" name="marca" placeholder="Marca del producto"><br>
+                <input type="text" name="imagen" placeholder="url de la imagen"><br>
+                <input type="text" name="codigo" placeholder="código de barras"><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

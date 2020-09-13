@@ -1,0 +1,47 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./static/css/main.css"/>
+    <title>actualizar producto</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <nav class="menu">
+          <a href="/">inicio</a>
+          <a href="/add">Agregar</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="product-view">
+        <article class="view">
+          <div id="image">
+            <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/gr/images/product-images/img_large/00750105590003L.jpg" class="icon" id="125555"/>
+          </div>
+        </article>
+        <div id="info">
+          <form action="/update" method="post" id="for-update">
+            <input type="text" name="id" id="aux" value="125555"/>
+            <br/>
+            <input type="text" name="nombre" value="Leche"/>
+            <br/>
+            <input type="text" name="codigo" value="125555"/>
+            <br/>
+            <input type="text" name="precio" value="20.00"/>
+            <br/>
+            <input type="text" name="descripcion" value="Leche entera de vaca"/>
+            <br/>
+            <input type="text" name="marca" value="Alpura"/>
+            <br/>
+            <input type="text" name="imagen" value="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/gr/images/product-images/img_large/00750105590003L.jpg"/>
+            <br/>
+            <input type="submit" value="Guardar" id="update"/>
+            <a href="/" id="eliminar">Cancelar</a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

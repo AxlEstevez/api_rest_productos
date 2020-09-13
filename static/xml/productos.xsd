@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="anaquel" type="tipoAnaquel"/>
+
+    <xs:complexType name="tipoAnaquel">
+        <xs:sequence>
+            <xs:element name="producto" type="tipoProducto" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoProducto">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="precio" type="xs:float" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="descripcion" type="tipoDescripcion" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="marca" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="imagen">
+                <xs:complexType>
+                    <xs:attribute name="url"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="codigoBarras" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoDescripcion">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="1500"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

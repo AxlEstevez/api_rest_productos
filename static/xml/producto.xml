@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<producto>
+	<nombre>Agua</nombre>
+	<precio>7.00</precio>
+	<descripcion>Agua natural de 600 ml</descripcion>
+	<marca>Bonafont</marca>
+	<imagen url="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/gr/images/product-images/img_large/00075810400171L.jpg"/>
+	<codigoBarras>234566</codigoBarras>
+</producto>

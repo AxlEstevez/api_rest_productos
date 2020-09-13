@@ -1,0 +1,28 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./static/css/main.css"/>
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <nav class="menu">
+          <a href="/">inicio</a>
+          <a href="/add">Agregar</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="anaquel">
+        <h1 class="titulo">Productos</h1>
+        <article class="productos">
+          {% if message %}
+            <h1>{%= message %}</h1>
+          {% endif %}
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

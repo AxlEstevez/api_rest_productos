@@ -1,0 +1,47 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./static/css/main.css"/>
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <nav class="menu">
+          <a href="/">inicio</a>
+          <a href="/add">Agregar</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="anaquel">
+        <h1 class="titulo">Productos</h1>
+        <article class="productos">
+          <form action="/getProducto" method="POST">
+            <input style="display: none;" type="text" value="234566" name="codigo"/>
+            <button class="boton">
+              <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:good/gr/images/product-images/img_large/00075810400171L.jpg" class="icon"/>
+            </button>
+          </form>
+        </article>
+        <article class="productos">
+          <form action="/getProducto" method="POST">
+            <input style="display: none;" type="text" value="25888" name="codigo"/>
+            <button class="boton">
+              <img src="https://cdn.shopify.com/s/files/1/0080/1076/0255/products/MARG-IBERIA-1-KG.jpg?v=1557783774" class="icon"/>
+            </button>
+          </form>
+        </article>
+        <article class="productos">
+          <form action="/getProducto" method="POST">
+            <input style="display: none;" type="text" value="222225" name="codigo"/>
+            <button class="boton">
+              <img src="https://www.superama.com.mx/Content/images/products/img_large/0750105590003L.jpg" class="icon"/>
+            </button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
