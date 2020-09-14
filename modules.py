@@ -135,7 +135,7 @@ def getInfo(codigo,xml):
                     childs[i].find('codigoBarras').text
                 )
                 return producto
-                break
+                
             
             i+=1
     else:

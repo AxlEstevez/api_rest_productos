@@ -24,6 +24,8 @@ app = Flask(__name__) # Se crea un Objeto flask para poder
 xml = 'static/xml/productos.xml'# ruta al archivo xml
 xsd = 'static/xml/productos.xsd'# ruta al archivo xsd
 xslt = 'static/xml/productos.xsl'# ruta al archivo xsl
+indexAux = 'indexAux.html' # archivo html donde se vizualizaran errores.
+agrega = 'agrega.html' # vista de agregar producto nuevo.
 # ruta al Schema del producto
 # ---------------------------------------------------------
 # Este Schema se usa para validar que la información 
@@ -51,7 +53,7 @@ def index():
         # página inical con un mensaje para "notificar" que
         # no existen productos aún.
             return render_template(
-                'indexAux.html',
+                indexAux,
                 message = "Sin elementos agregados"
             )
     else:
@@ -60,7 +62,7 @@ def index():
         # al usuario que hubo un problema al procesar la
         # petición de la página.
         return render_template(
-                'indexAux.html',
+                indexAux,
                 message = "Error en al procesar petición."
             )
     return render_template('index.html')
@@ -93,16 +95,16 @@ def agregaProducto():
                 return redirect('/')
             else:
                 return render_template(
-                    'agrega.html',
+                    agrega,
                     message = 'Erro en la petición'
                 )
         else:
-            return render_template('agrega.html')
+            return render_template(agrega)
 
 @app.route('/getProducto',methods=['POST'])
 def getProducto():
     xsltProducto = 'static/xml/producto.xsl'
-    xmlProducto = 'static/xml/producto.xml'
+    xmlProducto = productoXML
     htmlProduc = 'templates/producto.html'
     if request.method == 'POST':
         # se obtiene los datos del producto que el usuario
@@ -115,7 +117,7 @@ def getProducto():
             return render_template('producto.html')
         else:
             return render_template(
-                'indexAux.html',
+                indexAux,
                 error = 'Error en la petición'
                 )
     else:
@@ -132,7 +134,7 @@ def delete():
         return redirect('/')
     else:
         return render_template(
-            'indexAux.html',
+            indexAux,
             error = 'error al procesar petición'
         )
 
@@ -152,9 +154,8 @@ def updateProducto():
         # código de barras, con esto se tiene un "registro"
         # para posteriormente modificar el producto en el 
         # anaquel.
-        codigo = request.form['codigo']
         
-        aux = 'static/xml/producto.xml'
+        aux = productoXML
         restAnaquel(aux,xml)
         newProdcuto = Producto(
             request.form['nombre'],
@@ -169,13 +170,13 @@ def updateProducto():
             addAnaquel(aux,xml)
         else:
             return render_template(
-                'indexAux.html',
+                indexAux,
                 message = 'Error al procesar la petición.'
             )
         return redirect('/')
     else:
         return render_template(
-            'indexAux.html',
+            indexAux,
             message = 'Error al procesar la petición.'
         )
 
